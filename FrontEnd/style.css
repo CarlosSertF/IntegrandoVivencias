@@ -1,0 +1,192 @@
+header{
+    position: sticky; 
+    top: 0;
+    background-color: white;
+    border-color: black;
+    font-family: cursive;
+    padding-left: 15px;
+}
+
+body{
+    margin: 0;
+    background-image: url("figs/LOGO-FUNDO.png"), 
+    linear-gradient(to right, #1796ae, #e58383);
+    color:white;
+    font-family: cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+footer{
+    margin: 20px ;
+}
+
+.botoes{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    gap: 20px;
+}
+
+.botao-modelo1{
+    padding: 8px 16px;
+    background-color: #e58383;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao-modelo2{
+    padding: 8px 16px;
+    background-color: #1796ae;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.conteudo-main {
+    display: flex;
+    gap: 60px; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    align-items: flex-start; 
+}
+
+.conteudo-main figure {
+    flex-shrink: 0; 
+}
+
+.texto{
+    flex-grow: 1; 
+}
+
+form, .quadro {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    
+}
+
+input[type="text"],
+input[type="email"]
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botoes-forms{
+    display: flex;
+    gap: 20px;
+}
+
+button[type="submit"],
+button[type="button"]
+{
+    font-family: cursive;
+    background-color: #1796ae;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="reset"] {
+    font-family: cursive;
+    background-color: #e58383;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+#userListContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    color: black;
+}
+
+#userList {
+    padding-left: 0;
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+}
+
+/* 🌟 NOVO ESTILO PARA O "QUADRO BRANCO" 🌟 */
+#userList li {
+    background-color: white; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda cinza suave */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre os quadros */
+    border-radius: 6px; /* Cantos levemente arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidade */
+    line-height: 1.6; /* Espaçamento de linha para melhor leitura */
+    display: flex;
+    justify-content: space-between; /* Empurra o botão para a direita */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+#userList li strong {
+    color: #007bff; /* Destaca os títulos dos campos em azul */
+}
+
+
+
+
+
+
+/* NOVO: Estilo para o botão de exclusão "X" */
+.delete-button {
+    background: #dc3545; /* Cor vermelha */
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Torna o botão redondo */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0; /* Impede que o botão encolha */
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background: #c82333; 
+}
+
+/* NOVO: Garante que o texto do usuário ocupe o espaço restante */
+.user-info {
+    flex-grow: 1;
+}

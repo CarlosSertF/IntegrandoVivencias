@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando Vivências - Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="figs/LOGO.png" alt="Logo" width="150px">
+        </a>
+        <div class="botoes">
+            <a href="index.html" class="botao-modelo1">Início</a>
+            <a href="creditos.html" class="botao-modelo2">Créditos</a>
+        </div>
+    </header>
+
+    <h2 style="text-align: center; color: black; margin-top: 20px;">Acesso Restrito</h2>
+
+    <form id="form-login">
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="ex: admin@clinica.com">
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required style="width: 100%; padding: 10px; border: 1px solid rgb(167, 167, 167); border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <div class="botoes-forms" style="justify-content: center;">
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
